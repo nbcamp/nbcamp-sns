@@ -12,7 +12,21 @@
 		3351775C2AB82EE90089F53D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3351775B2AB82EE90089F53D /* ViewController.swift */; };
 		335177612AB82EEA0089F53D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 335177602AB82EEA0089F53D /* Assets.xcassets */; };
 		335177642AB82EEA0089F53D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 335177622AB82EEA0089F53D /* LaunchScreen.storyboard */; };
+		335177712AB8315D0089F53D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 335177702AB8315D0089F53D /* SnapKit */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		335177752AB8316A0089F53D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		335177542AB82EE90089F53D /* NbcampSNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NbcampSNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				335177712AB8315D0089F53D /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,7 @@
 			children = (
 				335177562AB82EE90089F53D /* NbcampSNS */,
 				335177552AB82EE90089F53D /* Products */,
+				3351776F2AB8315D0089F53D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +104,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		3351776F2AB8315D0089F53D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,12 +121,16 @@
 				335177502AB82EE90089F53D /* Sources */,
 				335177512AB82EE90089F53D /* Frameworks */,
 				335177522AB82EE90089F53D /* Resources */,
+				335177752AB8316A0089F53D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = NbcampSNS;
+			packageProductDependencies = (
+				335177702AB8315D0089F53D /* SnapKit */,
+			);
 			productName = NbcampSNS;
 			productReference = 335177542AB82EE90089F53D /* NbcampSNS.app */;
 			productType = "com.apple.product-type.application";
@@ -132,6 +159,9 @@
 				Base,
 			);
 			mainGroup = 3351774B2AB82EE90089F53D;
+			packageReferences = (
+				3351776E2AB8312E0089F53D /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 335177552AB82EE90089F53D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -376,6 +406,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3351776E2AB8312E0089F53D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		335177702AB8315D0089F53D /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3351776E2AB8312E0089F53D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3351774C2AB82EE90089F53D /* Project object */;
 }
