@@ -11,6 +11,7 @@ final class ProfileViewController: UIViewController {
 
     private lazy var userProfileView = ProfileViewUserProfileView()
     private lazy var userInteractiveView = ProfileViewUserInteractiveView()
+    private lazy var userGalleryView = ProfileViewGalleryView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +41,14 @@ final class ProfileViewController: UIViewController {
             make.top.equalTo(userProfileView.snp.bottom).offset(16)
             make.left.equalTo(view.safeAreaLayoutGuide.snp.left).offset(16)
             make.right.equalTo(view.safeAreaLayoutGuide.snp.right).offset(-28)
+        }
+        
+        view.addSubview(userGalleryView)
+        userGalleryView.snp.makeConstraints { make in
+            make.top.equalTo(userInteractiveView.snp.bottom).offset(16)
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
+            make.left.equalTo(view.safeAreaLayoutGuide.snp.left)
+            make.right.equalTo(view.safeAreaLayoutGuide.snp.right)
         }
     }
 }
