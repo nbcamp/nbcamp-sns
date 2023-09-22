@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		333550E52ABD42110025C29E /* ProfileViewTopNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333550E42ABD42110025C29E /* ProfileViewTopNavigationBar.swift */; };
 		335177582AB82EE90089F53D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335177572AB82EE90089F53D /* AppDelegate.swift */; };
 		3351775A2AB82EE90089F53D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335177592AB82EE90089F53D /* SceneDelegate.swift */; };
 		3351775C2AB82EE90089F53D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3351775B2AB82EE90089F53D /* ViewController.swift */; };
 		335177612AB82EEA0089F53D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 335177602AB82EEA0089F53D /* Assets.xcassets */; };
 		335177642AB82EEA0089F53D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 335177622AB82EEA0089F53D /* LaunchScreen.storyboard */; };
 		335177712AB8315D0089F53D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 335177702AB8315D0089F53D /* SnapKit */; };
+		335177782AB84D4C0089F53D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335177772AB84D4C0089F53D /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		333550E42ABD42110025C29E /* ProfileViewTopNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewTopNavigationBar.swift; sourceTree = "<group>"; };
 		335177542AB82EE90089F53D /* NbcampSNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NbcampSNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		335177572AB82EE90089F53D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		335177592AB82EE90089F53D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		335177602AB82EEA0089F53D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		335177632AB82EEA0089F53D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		335177652AB82EEA0089F53D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		335177772AB84D4C0089F53D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				3351775B2AB82EE90089F53D /* ViewController.swift */,
+				335177772AB84D4C0089F53D /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				335177622AB82EEA0089F53D /* LaunchScreen.storyboard */,
+				335177792AB84D860089F53D /* ProfileView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -109,6 +115,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		335177792AB84D860089F53D /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				333550E42ABD42110025C29E /* ProfileViewTopNavigationBar.swift */,
+			);
+			path = ProfileView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +204,8 @@
 			files = (
 				3351775C2AB82EE90089F53D /* ViewController.swift in Sources */,
 				335177582AB82EE90089F53D /* AppDelegate.swift in Sources */,
+				333550E52ABD42110025C29E /* ProfileViewTopNavigationBar.swift in Sources */,
+				335177782AB84D4C0089F53D /* ProfileViewController.swift in Sources */,
 				3351775A2AB82EE90089F53D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
