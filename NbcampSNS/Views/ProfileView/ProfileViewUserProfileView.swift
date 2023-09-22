@@ -1,6 +1,15 @@
 import UIKit
 
 final class ProfileViewUserProfileView: UIStackView {
+    private lazy var topHStackView = {
+        let topHStackView = UIStackView(arrangedSubviews: [
+            userProfileImageView, statusHStackView
+        ])
+        userProfileImageView.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+        topHStackView.spacing = 40
+        return topHStackView
+    }()
+    
     private lazy var userProfileImageView = {
         let userProfileImageView = UIImageView()
         userProfileImageView.image = .init(named: "userpic")
@@ -33,14 +42,40 @@ final class ProfileViewUserProfileView: UIStackView {
         statusHStackView.distribution = .fillEqually
         return statusHStackView
     }()
+    
+    private lazy var userTextVStackView = {
+        let userTextVStackView = UIStackView(arrangedSubviews: [
+            usernameLabel, introduceLabel
+        ])
+        userTextVStackView.axis = .vertical
+        return userTextVStackView
+    }()
+    
+    private lazy var usernameLabel = {
+        let usernameLabel = UILabel()
+        usernameLabel.text = "르탄이"
+        usernameLabel.font = .systemFont(ofSize: 14, weight: .bold)
+        return usernameLabel
+    }()
+
+    private lazy var introduceLabel = {
+        let introduceLabel = UILabel()
+        introduceLabel.text = """
+        iOS Developer 🍎
+        spartacodingclub.kr
+        """
+        introduceLabel.numberOfLines = 0
+        introduceLabel.font = .systemFont(ofSize: 14, weight: .regular)
+        return introduceLabel
+    }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
 
-        addArrangedSubview(userProfileImageView)
-        addArrangedSubview(statusHStackView)
-        userProfileImageView.setContentHuggingPriority(.defaultHigh, for: .horizontal)
-        spacing = 40
+        addArrangedSubview(topHStackView)
+        addArrangedSubview(userTextVStackView)
+        axis = .vertical
+        spacing = 16
     }
 
     @available(*, unavailable)

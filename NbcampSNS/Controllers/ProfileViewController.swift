@@ -9,10 +9,8 @@ final class ProfileViewController: UIViewController {
         return topNavigationBar
     }()
 
-    private lazy var userProfileView = {
-        let userProfileView = ProfileViewUserProfileView()
-        return userProfileView
-    }()
+    private lazy var userProfileView = ProfileViewUserProfileView()
+    private lazy var userInteractiveView = ProfileViewUserInteractiveView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +31,13 @@ final class ProfileViewController: UIViewController {
         view.addSubview(userProfileView)
         userProfileView.snp.makeConstraints { make in
             make.top.equalTo(topNavigationBar.snp.bottom).offset(32)
+            make.left.equalTo(view.safeAreaLayoutGuide.snp.left).offset(16)
+            make.right.equalTo(view.safeAreaLayoutGuide.snp.right).offset(-28)
+        }
+
+        view.addSubview(userInteractiveView)
+        userInteractiveView.snp.makeConstraints { make in
+            make.top.equalTo(userProfileView.snp.bottom).offset(16)
             make.left.equalTo(view.safeAreaLayoutGuide.snp.left).offset(16)
             make.right.equalTo(view.safeAreaLayoutGuide.snp.right).offset(-28)
         }
