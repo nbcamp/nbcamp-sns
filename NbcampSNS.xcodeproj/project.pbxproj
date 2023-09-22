@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		333550E52ABD42110025C29E /* ProfileViewTopNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333550E42ABD42110025C29E /* ProfileViewTopNavigationBar.swift */; };
+		333550E72ABD49030025C29E /* ProfileViewUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333550E62ABD49030025C29E /* ProfileViewUserProfileView.swift */; };
 		335177582AB82EE90089F53D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335177572AB82EE90089F53D /* AppDelegate.swift */; };
 		3351775A2AB82EE90089F53D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335177592AB82EE90089F53D /* SceneDelegate.swift */; };
 		3351775C2AB82EE90089F53D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3351775B2AB82EE90089F53D /* ViewController.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		333550E42ABD42110025C29E /* ProfileViewTopNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewTopNavigationBar.swift; sourceTree = "<group>"; };
+		333550E62ABD49030025C29E /* ProfileViewUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewUserProfileView.swift; sourceTree = "<group>"; };
 		335177542AB82EE90089F53D /* NbcampSNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NbcampSNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		335177572AB82EE90089F53D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		335177592AB82EE90089F53D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				333550E42ABD42110025C29E /* ProfileViewTopNavigationBar.swift */,
+				333550E62ABD49030025C29E /* ProfileViewUserProfileView.swift */,
 			);
 			path = ProfileView;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				335177582AB82EE90089F53D /* AppDelegate.swift in Sources */,
 				333550E52ABD42110025C29E /* ProfileViewTopNavigationBar.swift in Sources */,
 				335177782AB84D4C0089F53D /* ProfileViewController.swift in Sources */,
+				333550E72ABD49030025C29E /* ProfileViewUserProfileView.swift in Sources */,
 				3351775A2AB82EE90089F53D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

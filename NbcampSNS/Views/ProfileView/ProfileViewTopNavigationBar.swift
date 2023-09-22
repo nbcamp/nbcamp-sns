@@ -40,7 +40,6 @@ final class ProfileViewTopNavigationBar: UIStackView {
         alignment = .center
         distribution = .fill
         isLayoutMarginsRelativeArrangement = true
-        layoutMargins = .init(top: 16, left: 16, bottom: 16, right: 16)
     }
 
     @available(*, unavailable)
